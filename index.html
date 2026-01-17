@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>المهندس عزام الفقيه</title>
+    
+    <!-- الربط مع ملف CSS -->
+    <link rel="stylesheet" href="STYLE.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Almarai:wght@300;400;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts - English -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate.css للرسوم المتحركة -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="min-h-screen overflow-x-hidden">
+    <!-- خلفية التكنولوجيا -->
+    <div class="tech-grid-bg"></div>
+    <div class="matrix-bg"></div>
+    
+    <!-- زر الواتساب العائم -->
+    <a href="https://wa.me/+967772831850?text= 20%اود ممرحباً%20عزام،%20أعجبتني%20سيرتك %20وأعمالك%20التقنية" 
+       target="_blank" 
+       class="whatsapp-float"
+       aria-label="تواصل معي على واتساب">
+        <div class="relative">
+            <div class="absolute -inset-2 bg-green-500 rounded-full blur-md opacity-70"></div>
+            <div class="relative bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-colors duration-300">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+            </div>
+        </div>
+    </a>
+    
+    <!-- زر التليجرام العائم -->
+    <a href="https://t.me/Eng_Azzam" 
+       target="_blank" 
+       class="telegram-float">
+        <div class="relative">
+            <div class="absolute -inset-2 bg-blue-500 rounded-full blur-md opacity-70"></div>
+            <div class="relative bg-blue-500 text-white p-4 rounded-full shadow-2xl hover:bg-blue-600 transition-colors duration-300">
+                <i data-lucide="send" class="w-6 h-6"></i>
+            </div>
+        </div>
+    </a>
+    
+    <!-- القائمة الجانبية المتطورة -->
+    <div class="cyber-sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center">
+                    <div class="mr-3">
+                        <h3 class="text-lg font-bold cyber-gradient english-text">AZZAM AL FAQIH </h3>
+                        <p class="text-xs text-gray-400">طالب تقنية معلومات</p>
+                    </div>
+                </div>
+                <button id="closeSidebar" class="text-gray-400 hover:text-white transition-colors p-2" aria-label="إغلاق القائمة">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- صورة الملف الشخصي الكبيرة -->
+            <div class="cyber-profile" style="width: 150px; height: 150px; margin: 0 auto 20px;">
+                <div class="cyber-profile-glow"></div>
+                <img src="C:\Users\AR\Desktop\MY CV BEST\50.jpg"
+                     alt="عزام الفقيه" 
+                     class="cyber-profile-img">
+                <div class="cyber-profile-grid"></div>
+            </div>
+        </div>
+        
+        <nav class="p-6">
+            <div class="space-y-4">
+                <a href="#home" class="flex items-center p-3 rounded-xl hover:bg-blue-900/20 transition-all duration-300 border border-transparent hover:border-blue-500/30">
+                    <div class="menu-icon">
+                        <i data-lucide="home" class="w-5 h-5 text-blue-400"></i>
+                    </div>
+                    <span class="text-gray-300 font-medium">الرئيسية</span>
+                </a>
+                <a href="#about" class="flex items-center p-3 rounded-xl hover:bg-blue-900/20 transition-all duration-300 border border-transparent hover:border-blue-500/30">
+                    <div class="menu-icon">
+                        <i data-lucide="user" class="w-5 h-5 text-purple-400"></i>
+                    </div>
+                    <span class="text-gray-300 font-medium english-text">About Me</span>
+                </a>
+                <a href="#skills" class="flex items-center p-3 rounded-xl hover:bg-blue-900/20 transition-all duration-300 border border-transparent hover:border-blue-500/30">
+                    <div class="menu-icon">
+                        <i data-lucide="cpu" class="w-5 h-5 text-green-400"></i>
+                    </div>
+                    <span class="text-gray-300 font-medium">المهارات</span>
+                </a>
+                <!-- <a href="#projects" class="flex items-center p-3 rounded-xl hover:bg-blue-900/20 transition-all duration-300 border border-transparent hover:border-blue-500/30">
+                    <div class="menu-icon">
+                        <i data-lucide="briefcase" class="w-5 h-5 text-orange-400"></i>
+                    </div>
+                    <span class="text-gray-300 font-medium">المشاريع</span>
+                </a> -->
+                <a href="#apps" class="flex items-center p-3 rounded-xl hover:bg-blue-900/20 transition-all duration-300 border border-transparent hover:border-blue-500/30">
+                    <div class="menu-icon">
+                        <i data-lucide="smartphone" class="w-5 h-5 text-pink-400"></i>
+                    </div>
+                    <span class="text-gray-300 font-medium english-text">My Applications</span>
+                </a>
+                <a href="#contact" class="flex items-center p-3 rounded-xl hover:bg-blue-900/20 transition-all duration-300 border border-transparent hover:border-blue-500/30">
+                    <div class="menu-icon">
+                        <i data-lucide="mail" class="w-5 h-5 text-cyan-400"></i>
+                    </div>
+                    <span class="text-gray-300 font-medium english-text">Call Me</span>
+                </a>
+            </div>
+            
+            <div class="mt-12 pt-6 border-t border-gray-800">
+                <p class="text-gray-400 text-sm mb-4">تواصل معي</p>
+                <div class="flex space-x-3 space-x-reverse">
+                    <a href="https://wa.me/+967772831850" target="_blank" class="social-tech-icon">
+                        <i data-lucide="message-circle" class="w-5 h-5 text-green-400"></i>
+                    </a>
+                    <a href="https://t.me/Eng_Azzam" target="_blank" class="social-tech-icon">
+                        <i data-lucide="send" class="w-5 h-5 text-blue-400"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Overlay للقائمة الجانبية -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+    
+    <!-- نافذة التنبيه للتطبيقات -->
+    <div class="app-modal" id="appModal">
+        <div class="app-modal-content">
+            <button class="app-modal-close" id="closeAppModal">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+            <div class="text-center">
+                <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
+                    <i data-lucide="smartphone" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 cyber-gradient english-text" id="appModalTitle"></h3>
+                <p class="text-gray-300 mb-6" id="appModalMessage"></p>
+                <button class="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full font-medium hover:opacity-90 transition-all duration-300 neon-border english-text" id="appModalCloseBtn">
+                    فهمت
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- المحتوى الرئيسي -->
+    <div class="w-full">
+        <!-- الهايدر -->
+        <header class="cyber-header">
+            <div class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+                <button id="openSidebar" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center p-2" aria-label="فتح القائمة">
+                    <i data-lucide="menu" class="w-6 h-6 md:w-8 md:h-8 mr-2"></i>
+                    <span class="font-medium hidden sm:inline">القائمة</span>
+                </button>
+                
+                <h1 class="text-blue-400 font-bold text-base md:text-lg mb-3 md:mb-4 block">عزام الفقيه</h1>
+                
+             <a href="#contact" class="px-4 py-2 md:px-6 md:py-2 bg-transparent border-2 border-transparent rounded-full font-medium transition-all duration-300 flex items-center neon-border mobile-friendly-btn english-text relative">
+    <!-- إطار متدرج -->
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full -z-10"></div>
+    
+    <!-- خلفية داخلية -->
+    <div class="absolute inset-0 bg-white dark:bg-gray-900 rounded-full -z-10"></div>
+    
+    <!-- النص والأيقونة -->
+    <div class="relative z-10 flex items-center">
+        <i data-lucide="message-circle" class="w-4 h-4 md:w-5 md:h-5 ml-1 md:ml-2"></i>
+        <span class="hidden sm:inline ">تواصل معي</span>
+        <span class="sm:hidden">Call</span>
+    </div>
+</a>
+            </div>
+        </header>
+        
+        <!-- قسم الهيرو -->
+        <section id="home" class="min-h-screen flex items-center relative overflow-hidden py-10 md:py-20 mobile-spacing">
+            <div class="container mx-auto px-4 md:px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
+                    <div class="section-fade order-2 lg:order-1">
+                        <div class="mb-6 md:mb-8">
+                            <span class="text-blue-400 font-bold text-base md:text-lg mb-3 md:mb-4 block">مرحباً، أنا</span>
+                            <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 font-heading">
+                                <span class="cyber-gradient typing-effect english-text">AZZAM AL FAQIH</span>
+                            </h2>
+                            <p class="text-base md:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed mobile-text">
+                                طالب تقنية معلومات متخصص في مجال البرمجة وتطوير التطبيقات مع نظرة عامة على برمجة الجوالات، أسعى لتطوير حلول رقمية مبتكرة باستخدام أحدث التقنيات.
+                            </p>
+                            <p class="text-lg text-gray-400 mb-6">
+                                مهتم بمجالات التكنولوجيا الحديثة، مواقع الويب، تطوير التطبيقات،  .
+                            </p>
+                        </div>
+                        
+                        <div class="flex flex-wrap gap-3 md:gap-4">
+                            <a href="#projects" class="px-6 py-2 md:px-8 md:py-3 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full font-medium hover:opacity-90 transition-all duration-300 flex items-center neon-border mobile-friendly-btn english-text">
+                                <i data-lucide="eye" class="w-4 h-4 md:w-5 md:h-5 ml-1 md:ml-2"></i>
+                                <span>شاهد أعمالي</span>
+                            </a>
+                            <a href="#contact" class="px-6 py-2 md:px-8 md:py-3 cyber-glass rounded-full font-medium hover:bg-opacity-80 transition-all duration-300 flex items-center mobile-friendly-btn english-text">
+                                <i data-lucide="message-circle" class="w-4 h-4 md:w-5 md:h-5 ml-1 md:ml-2"></i>
+                                <span>تواصل معي</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="section-fade flex justify-center order-1 lg:order-2 mb-8 lg:mb-0">
+                        <!-- صورة الملف الشخصي التكنولوجية -->
+                        <div class="cyber-profile">
+                            <div class="cyber-profile-glow"></div>
+                            <img src="C:\Users\AR\Desktop\MY CV BEST\90.jpg" 
+                                 alt="عزام الفقيه" 
+                                 class="cyber-profile-img">
+                            <div class="cyber-profile-grid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم About Me -->
+        <section id="about" class="py-12 md:py-20 relative mobile-spacing">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="text-center mb-10 md:mb-16 section-fade">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 font-heading english-text">About Me</h2>
+                    <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-decorative mobile-text">طالب متخصص في مجال تقنية المعلومات مع شغف كبير بالتكنولوجيا والابتكار</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mobile-grid">
+                    <div class="section-fade">
+                        <div class="cyber-card p-6 md:p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 cyber-gradient english-text">نبذة About Me</h3>
+                            <p class="text-gray-300 mb-4 md:mb-6 leading-relaxed mobile-text">
+                                أنا طالب في مجال تقنية المعلومات، أسعى لاكتساب المعرفة والخبرة في مختلف مجالات التكنولوجيا. أمتلك شغفاً كبيراً بالبرمجة وتطوير البرمجيات، وأعمل على تطوير مهاراتي باستمرار في مجالات متعددة تشمل تطوير الويب، برمجة الجوالات،وإنشاء التطبيقات ، تصاميم الفوتوشوب المتنوعه  .
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mobile-text">
+                                أهتم بمتابعة أحدث التقنيات والتطورات في عالم البرمجة والذكاء الاصطناعي، وأسعى لتطبيق ما أتعلمه في مشاريع عملية تساعدني على تنمية مهاراتي وتقديم حلول تقنية مبتكرة.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="section-fade">
+                        <div class="cyber-card p-6 md:p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 cyber-gradient">نظرة عامة على برمجة الأندرويد</h3>
+                            <p class="text-gray-300 mb-4 md:mb-6 leading-relaxed mobile-text">لدي معرفة بمفاهيم برمجة الجوالات وتقديم حلول بسيطة لجعل الجوال يعمل بدون مشاكل ابرز المشاكل (تخطي حسبات جوجل - تعريب - الوتساب المحظور - الفورجي والفولتي ) بأحدث الادوات المدفوعة واليك بأقل الاسعار
+                            <div class="grid grid-cols-2 gap-4 mt-6 md:mt-8">
+                                <div class="text-center p-4 cyber-glass rounded-xl">
+                                    <i data-lucide="smartphone" class="w-8 h-8 text-green-400 mx-auto mb-3"></i>
+                                    <h4 class="font-bold mb-2">برمجة الأندرويد</h4>
+                                </div>
+                                <div class="text-center p-4 cyber-glass rounded-xl">
+                                    <i data-lucide="code" class="w-8 h-8 text-blue-400 mx-auto mb-3"></i>
+                                    <h4 class="font-bold mb-2"> احدث الادوات</h4>
+                                    <p class="text-gray-400 text-sm"> UNLOCKTOOL,SamsungFW,KPT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم المهارات -->
+        <section id="skills" class="py-12 md:py-20 relative mobile-spacing">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="text-center mb-10 md:mb-16 section-fade">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 font-heading">  مهاراتي التقنية </h2>
+                    <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-decorative mobile-text">مجموعة المهارات والشهادات التي اكتسبتها خلال رحلتي الدراسية</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mobile-grid">
+                    <div class="cyber-card p-4 md:p-6 section-fade">
+                        <div class="tech-icon">
+                            <i data-lucide="award" class="w-6 h-6 md:w-7 md:h-7 text-yellow-400"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3 english-text">الشهادات المهنية</h3>
+                        <ul class="text-gray-400 text-xs md:text-sm space-y-2 md:space-y-3 mb-3 md:mb-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-3 h-3 md:w-4 md:h-4 text-green-400 mt-1 ml-2"></i>
+                                <span>الرخصة الدولية لقيادة الحاسوب (ICDL)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-3 h-3 md:w-4 md:h-4 text-green-400 mt-1 ml-2"></i>
+                                <span>شهادة في إنترنت الأشياء (IoT)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-3 h-3 md:w-4 md:h-4 text-green-400 mt-1 ml-2"></i>
+                                <span>شهادة في الإلقاء والتقديم</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-3 h-3 md:w-4 md:h-4 text-green-400 mt-1 ml-2"></i>
+                                <span>شهادة دبلوم اللغة الانجليزية   </span>
+                            </li>
+                             <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-3 h-3 md:w-4 md:h-4 text-green-400 mt-1 ml-2"></i>
+                                <span>دورة الفوتوشوب (PH) من اتحاد الجامعات الدولي</span>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    
+                    <div class="cyber-card p-4 md:p-6 section-fade">
+                        <div class="tech-icon">
+                            <i data-lucide="palette" class="w-6 h-6 md:w-7 md:h-7 text-pink-400"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">الجرافيكس والرسم</h3>
+                        <p class="text-gray-400 text-xs md:text-sm mb-3 md:mb-4">مهارات في فنون الرسم والتصميم الجرافيكي</p>
+                        <div class="space-y-2 md:space-y-3">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-xs md:text-sm text-gray-300">فنون الرسم</span>
+                                    <span class="text-xs md:text-sm text-gray-400 english-text">75%</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-xs md:text-sm text-gray-300 english-text">Adobe Photoshop</span>
+                                    <span class="text-xs md:text-sm text-gray-400 english-text">85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-pink-500 to-red-500 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                             <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-xs md:text-sm text-gray-300">اللغة الانجليزية </span>
+                                    <span class="text-xs md:text-sm text-gray-400 english-text">70%</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="cyber-card p-4 md:p-6 section-fade">
+                        <div class="tech-icon">
+                            <i data-lucide="code" class="w-6 h-6 md:w-7 md:h-7 text-blue-400"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3 english-text">المهارات التقنية</h3>
+                        <p class="text-gray-400 text-xs md:text-sm mb-3 md:mb-4 english-text">أساسيات البرمجة والتقنيات</p>
+                        <div class="space-y-2 md:space-y-3">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-xs md:text-sm text-gray-300 english-text">HTML & CSS</span>
+                                    <span class="text-xs md:text-sm text-gray-400 english-text">85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-xs md:text-sm text-gray-300 english-text">JavaScript</span>
+                                    <span class="text-xs md:text-sm text-gray-400 english-text">75%</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-xs md:text-sm text-gray-300 english-text">Microsoft Office</span>
+                                    <span class="text-xs md:text-sm text-gray-400 english-text">95%</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-green-500 to-teal-500 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم المشاريع
+        <section id="projects" class="py-12 md:py-20 relative bg-gradient-to-b from-transparent to-gray-900/30 mobile-spacing">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="text-center mb-10 md:mb-16 section-fade">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 font-heading">مشاريعي التقنية</h2>
+                    <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-decorative mobile-text">مشاريع أكاديمية وشخصية قمت بتطويرها خلال رحلتي الدراسية</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mobile-grid">
+                    <div class="cyber-card overflow-hidden section-fade">
+                        <div class="h-40 md:h-48 bg-gradient-to-br from-blue-900/50 to-cyan-900/30 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center opacity-30"></div>
+                            <i data-lucide="globe" class="w-12 h-12 md:w-16 md:h-16 text-blue-400 relative z-10"></i>
+                        </div>
+                        <div class="p-4 md:p-6">
+                            <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-3 font-heading">موقع شخصي</h3>
+                            <p class="text-gray-400 mb-3 md:mb-4 mobile-text">موقع ويب شخصي يعرض الملف الشخصي والمشاريع باستخدام HTML, CSS, JavaScript.</p>
+                            <div class="flex flex-wrap gap-1 md:gap-2 mb-4 md:mb-6">
+                                <span class="px-2 py-1 md:px-3 md:py-1 bg-blue-900/50 text-blue-300 rounded-full text-xs md:text-sm english-text">HTML</span>
+                                <span class="px-2 py-1 md:px-3 md:py-1 bg-purple-900/50 text-purple-300 rounded-full text-xs md:text-sm english-text">CSS</span>
+                                <span class="px-2 py-1 md:px-3 md:py-1 bg-yellow-900/50 text-yellow-300 rounded-full text-xs md:text-sm english-text">JavaScript</span>
+                            </div>
+                            <div class="under-construction">
+                                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center text-sm md:text-base english-text">
+                                    <span>عرض المشروع</span>
+                                    <i data-lucide="arrow-left" class="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cyber-card overflow-hidden section-fade">
+                        <div class="h-40 md:h-48 bg-gradient-to-br from-cyan-900/50 to-blue-900/30 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center opacity-30"></div>
+                            <i data-lucide="smartphone" class="w-12 h-12 md:w-16 md:h-16 text-cyan-400 relative z-10"></i>
+                        </div>
+                        <div class="p-4 md:p-6">
+                            <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-3 font-heading">تطبيق جوال</h3>
+                            <p class="text-gray-400 mb-3 md:mb-4 mobile-text">تطبيق جوال بسيط يقدم وظائف أساسية مع تصميم متجاوب وواجهة سهلة الاستخدام.</p>
+                            <div class="flex flex-wrap gap-1 md:gap-2 mb-4 md:mb-6">
+                                <span class="px-2 py-1 md:px-3 md:py-1 bg-blue-900/50 text-blue-300 rounded-full text-xs md:text-sm english-text">Android</span>
+                                <span class="px-2 py-1 md:px-3 md:py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-xs md:text-sm english-text">Java</span>
+                                <span class="px-2 py-1 md:px-3 md:py-1 bg-gray-900/50 text-gray-300 rounded-full text-xs md:text-sm english-text">XML</span>
+                            </div>
+                            <div class="under-construction">
+                                <a href="#" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 flex items-center text-sm md:text-base english-text">
+                                    <span>عرض المشروع</span>
+                                    <i data-lucide="arrow-left" class="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- قسم التطبيقات -->
+        <section id="apps" class="py-12 md:py-20 relative mobile-spacing">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="text-center mb-10 md:mb-16 section-fade">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 font-heading english-text">My Applications </h2>
+                    <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto font-decorative mobile-text">تطبيقات قيد التطوير والتخطيط</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mobile-grid">
+                    <div class="section-fade">
+                        <div class="cyber-card p-6 md:p-8 app-card" data-app="taskflow" data-title="TaskFlow Pro" data-message="هذا التطبيق قيد التطوير حالياً. سيكون متاحاً للتحميل قريباً.">
+                            <div class="flex items-center mb-6 md:mb-8">
+                                <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center ml-4 md:ml-6">
+                                    <i data-lucide="calendar" class="w-8 h-8 md:w-10 md:h-10 text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl md:text-2xl font-bold font-heading english-text">TaskFlow Pro</h3>
+                                    <p class="text-gray-400 text-sm md:text-base english-text">تطبيق ادارة المهام الذكي</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mb-4 md:mb-6 mobile-text">
+                                تطبيق إدارة مهام ذكي مصمم لمساعدة الطلاب على تنظيم وقتهم وواجباتهم الدراسية بكفاءة عالية.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex space-x-2 md:space-x-3 space-x-reverse">
+                                    <div class="tech-icon" style="width: 32px; height: 32px;">
+                                        <i data-lucide="android" class="w-3 h-3 md:w-4 md:h-4 text-green-300"></i>
+                                    </div>
+                                    <div class="tech-icon" style="width: 32px; height: 32px;">
+                                        <i data-lucide="smartphone" class="w-3 h-3 md:w-4 md:h-4 text-gray-300"></i>
+                                    </div>
+                                </div>
+                                <button class="app-view-btn text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center text-sm md:text-base english-text">
+                                    <span>عرض التفاصيل</span>
+                                    <i data-lucide="arrow-left" class="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section-fade">
+                        <div class="cyber-card p-6 md:p-8 app-card" data-app="healthtrack" data-title="HealthTrack AI" data-message="التطبيق قيد التطوير وسيتم إصدار النسخة الأولى قريباً.">
+                            <div class="flex items-center mb-6 md:mb-8">
+                                <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center ml-4 md:ml-6">
+                                    <i data-lucide="heart" class="w-8 h-8 md:w-10 md:h-10 text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl md:text-2xl font-bold font-heading english-text">HealthTrack AI</h3>
+                                    <p class="text-gray-400 text-sm md:text-base english-text">تطبيق الصحة والروتين اليومي</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mb-4 md:mb-6 mobile-text">
+                                تطبيق متقدم لتتبع الصحة والعادات اليومية مع تحليلات ذكية تساعد على تحسين وتنشيط البدن  .
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex space-x-2 md:space-x-3 space-x-reverse">
+                                    <div class="tech-icon" style="width: 32px; height: 32px;">
+                                        <i data-lucide="android" class="w-3 h-3 md:w-4 md:h-4 text-green-300"></i>
+                                    </div>
+                                    <div class="tech-icon" style="width: 32px; height: 32px;">
+                                        <i data-lucide="watch" class="w-3 h-3 md:w-4 md:h-4 text-cyan-300"></i>
+                                    </div>
+                                </div>
+                                <button class="app-view-btn text-purple-400 hover:text-purple-300 transition-colors duration-300 flex items-center text-sm md:text-base english-text">
+                                    <span>عرض التفاصيل</span>
+                                    <i data-lucide="arrow-left" class="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      <!-- قسم التواصل -->
+<section id="contact" class="py-20 relative bg-gradient-to-b from-transparent to-gray-900/30">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 section-fade">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading">تواصل معي</span></h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto font-decorative">لنعمل معاً على تحويل أفكارك إلى واقع رقمي مذهل</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="section-fade">
+                <div class="cyber-glass rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-8 font-heading"> وسائل التواصل</h3>
+                    
+                    <div class="space-y-8 mb-10">
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center ml-6">
+                                <i data-lucide="mail" class="w-7 h-7 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">البريد الإلكتروني</p>
+                                <a href="mailto:azzam0rshad1@example.com" class="text-lg text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                                    azzam0rshad1@example.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center ml-6">
+                                <i data-lucide="phone" class="w-7 h-7 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">الهاتف</p>
+                                <a href="phone:+967 772831850" class="text-lg text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                                    +967 772831850
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 flex items-center justify-center ml-6">
+                                <i data-lucide="map-pin" class="w-7 h-7 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">الموقع</p>
+                                <p class="text-lg text-gray-300">متاح للعمل عن بعد عالمياً
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold mb-6 font-heading">تواصل على وسائل التواصل</h4>
+                        <div class="flex space-x-4 space-x-reverse">
+                            <!-- <a href="#" class="w-14 h-14 rounded-xl cyber-glass flex items-center justify-center hover:bg-blue-900/30 transition-colors duration-300 hover:border-blue-500/50">
+                                <i data-lucide="github" class="w-7 h-7 text-gray-300"></i>
+                            </a>
+                            <a href="https://wa.me/+967772831850" target="_blank" class="w-14 h-14 rounded-xl cyber-glass flex items-center justify-center hover:bg-green-900/30 transition-colors duration-300 hover:border-green-500/50 group">
+                            <i data-lucide="message-circle" class="w-7 h-7 text-gray-300 group-hover:text-green-400 transition-colors duration-300"></i>
+                            </a>
+                            <a href="#" class="w-14 h-14 rounded-xl cyber-glass flex items-center justify-center hover:bg-blue-900/30 transition-colors duration-300 hover:border-blue-500/50">
+                                <i data-lucide="linkedin" class="w-7 h-7 text-gray-300"></i>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="section-fade">
+    <div class="cyber-glass rounded-2xl p-4 md:p-6">
+        <h3 class="text-xl font-bold mb-4 font-heading">أرسل رسالة</h3>
+        <form id="contactForm" class="space-y-3 md:space-y-4">
+            <div>
+                <label class="block text-gray-300 mb-1.5 text-xs md:text-sm">اسمك</label>
+                <input type="text" name="name" placeholder=" " required 
+                       class="w-full bg-gray-900/50 border border-gray-700 rounded-xl px-3 md:px-4 py-2.5 md:py-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-xs md:text-sm">
+            </div>
+            
+            <div>
+                <label class="block text-gray-300 mb-1.5 text-xs md:text-sm">بريدك الإلكتروني</label>
+                <input type="email" name="email" placeholder="" required 
+                       class="w-full bg-gray-900/50 border border-gray-700 rounded-xl px-3 md:px-4 py-2.5 md:py-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-xs md:text-sm">
+            </div>
+            
+            <div>
+                <label class="block text-gray-300 mb-1.5 text-xs md:text-sm">الرسالة</label>
+                <textarea rows="3" name="message" placeholder = ""required 
+                          class="w-full bg-gray-900/50 border border-gray-700 rounded-xl px-3 md:px-4 py-2.5 md:py-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-xs md:text-sm resize-none"></textarea>
+            </div>
+            
+            <div class="pt-1">
+                <button type="submit" class="w-full py-2.5 md:py-3 bg-transparent border-2 border-transparent rounded-xl font-medium transition-all duration-300 flex items-center justify-center neon-border relative group overflow-hidden">
+                    <!-- إطار متدرج -->
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl -z-10"></div>
+                    
+                    <!-- خلفية داخلية -->
+                    <div class="absolute inset-0 bg-white dark:bg-gray-900 rounded-xl -z-10 group-hover:bg-gray-50 dark:group-hover:bg-gray-800 transition-colors duration-300"></div>
+                    
+                    <!-- النص والأيقونة -->
+                    <div class="relative z-10 flex items-center">
+                        <i data-lucide="send" class="w-3.5 h-3.5 md:w-4 md:h-4 ml-1 md:ml-2 transition-transform group-hover:scale-110 duration-300"></i>
+                        <span class="text-xs md:text-sm transition-all duration-300 group-hover:tracking-wide">أرسل الرسالة</span>
+                    </div>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+        
+        <!-- الفوتر -->
+        <footer class="py-8 md:py-10 border-t border-gray-800">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+
+                    
+                    <div class="flex flex-wrap justify-center gap-4 md:gap-6 mb-6 md:mb-0">
+                        <a href="#home" class="text-gray-400 ">Main</a>
+                        <a href="#about" class="text-gray-400 ">About Me</a>
+                        <a href="#skills" class="text-gray-400 ">Skills</a>
+                        <a href="#contact" class="text-gray-400">Communication</a>
+                    </div>
+                    
+                    <div class="flex space-x-3 md:space-x-4 space-x-reverse">
+                        <a href="https://wa.me/+967772831850" target="_blank" class="social-tech-icon">
+                            <i data-lucide="message-circle" class="w-4 h-4 md:w-5 md:h-5 text-green-400"></i>
+                        </a>
+                        <a href="https://t.me/Eng_Azzam" target="_blank" class="social-tech-icon">
+                            <i data-lucide="send" class="w-4 h-4 md:w-5 md:h-5 text-blue-400"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-8 md:mt-10 pt-6 md:pt-8 border-t border-gray-800 text-center text-gray-500 text-sm md:text-base">
+                    <p>&copy; <span id="currentYear"></span> .عزام الفقيه.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- الربط مع ملف JavaScript -->
+    <script src="scrypt.js"></script>
+</body>
+</html>
